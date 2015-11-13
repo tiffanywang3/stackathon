@@ -57,10 +57,11 @@ function startVideo() {
     drawLoop();
 }
 
-function stopVideo() {
+function stopTracking() {
     ctrack.stop(vid);
 
 }
+var finalEmotion;
 
 function logVals(){
     var sortable = [];
@@ -69,9 +70,12 @@ function logVals(){
         sortable.sort(function(a, b) {return b[1] - a[1]})
     }
     var emotion = sortable.slice(0, 1);
-    console.log(emotion[0]);
-
+    finalEmotion = emotion[0][0]
+    console.log(finalEmotion);
+    return finalEmotion;
+    
 }
+
 
 var finalVals = {};
 var finalValues = {};
@@ -89,15 +93,6 @@ function drawLoop() {
 
     if (er) {
         updateData(er);
-        // //THIS IS WHERE THE RECOMMENDATIONS SHOULD HAPPEN POTENTIALLY
-        // for (var i = 0;i < er.length;i++) {
-        //     if (er[i].value > 0.4) {
-        //         document.getElementById('icon'+(i+1)).style.visibility = 'visible';
-        //     } else {
-        //         document.getElementById('icon'+(i+1)).style.visibility = 'hidden';
-        //     }
-        // }
-        
         for(var i=0; i < er.length; i++){
             if(!finalVals[i]){
                 finalVals[i] = er[i].value;
@@ -109,8 +104,8 @@ function drawLoop() {
             }
          
         }
-        
     }
+
 }
 
 var ec = new emotionClassifier();
