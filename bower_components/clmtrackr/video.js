@@ -71,7 +71,6 @@ function logVals(){
     }
     var emotion = sortable.slice(0, 1);
     finalEmotion = emotion[0][0]
-    console.log(finalEmotion);
     return finalEmotion;
     
 }

@@ -17,8 +17,7 @@ module.exports = {
     "callbackURL": "INSERT_GOOGLE_CALLBACK_HERE"
   },
   "TWILIO": {
-    "clientID": "ACf952e5414c9ab5860026a45791fb1b9a",
-    "clientSecret": "6ccbdf56fadd90425cd864e27bd0f739",
-    "callbackURL": "50c0f0b3b300fe277ab42fcf23b3b2af"
+    "clientID": "ACf58023e06270735837afffe7441f2c47",
+    "clientSecret": "50c0f0b3b300fe277ab42fcf23b3b2af"
   }
 };
