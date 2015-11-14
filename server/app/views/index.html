@@ -35,6 +35,8 @@
 
 </head>
 <body ng-app="FullstackGeneratedApp" ng-controller="MainCtrl">    
+<div id="main" ui-view></div>
+<br>
 <div id="container">
     <video id="videoel" width="400" height="300" preload="auto" loop>
     </video>
@@ -46,11 +48,13 @@
     <input class="btn" type="button" value="wait, loading video" disabled="disabled" onclick="startVideo()" id="startbutton"></input>
     <input class="btn" type="button" value="stop" onclick="stopTracking()"></input>
     <input class="btn" type="button" value="emotion" ng-click="goToState()"></input>
+    <input class="btn" type="button" value="home" ng-click="goHome()"></input>
+</div>
 
 </div>
     <script src="/clmtrackr/video.js"></script>
 
-<div id="main" ui-view></div>
+
 
 
 </body>

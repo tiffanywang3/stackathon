@@ -12,7 +12,6 @@ router.post('/', function(req,res,next){
 		from: "+17148743954", 
 		body: req.body.body,   
 	}, function(err, message) { 
-		console.log(message);
 		if (err) next(err); 
 		else res.send(message);
 	});
