@@ -20,7 +20,11 @@ body {
   margin: 0 auto;
 }
 
-
+#nameInput{
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @import 'directives/main';
 @import 'home/main';

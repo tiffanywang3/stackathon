@@ -36,6 +36,7 @@
 </head>
 <body ng-app="FullstackGeneratedApp" ng-controller="MainCtrl">    
 <div id="main" ui-view></div>
+<input id="nameInput" ng-show="isShowing" style="width: 300px" type="text" ng-model="name" class="form-control" placeholder="What's your name?">
 <br>
 <div id="container">
     <video id="videoel" width="400" height="300" preload="auto" loop>
@@ -47,8 +48,8 @@
 <div id="controls">
     <input class="btn" type="button" value="wait, loading video" disabled="disabled" onclick="startVideo()" id="startbutton"></input>
     <input class="btn" type="button" value="stop" onclick="stopTracking()"></input>
-    <input class="btn" type="button" value="emotion" ng-click="goToState()"></input>
-    <input class="btn" type="button" value="home" ng-click="goHome()"></input>
+    <input class="btn" type="button" value="your emotion" ng-click="goToState()"></input>
+    <input class="btn" type="button" value="try again" ng-click="goHome()"></input>
 </div>
 
 </div>
