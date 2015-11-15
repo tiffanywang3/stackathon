@@ -23,5 +23,9 @@ module.exports = {
         "clientID": process.env.GOOGLE_CLIENT_ID,
         "clientSecret": process.env.GOOGLE_CLIENT_SECRET,
         "callbackURL": process.env.CALLBACK_URL
+    },
+    "TWILIO": {
+       "clientID": process.env.TWILIO_CLIENT_ID,
+        "clientSecret": process.env.TWILIO_CLIENT_SECRET, 
     }
 };
