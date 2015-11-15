@@ -3,7 +3,7 @@ module.exports = function (app) {
 
     // setValue and getValue are merely alias
     // for app.set and app.get used in the less
-    // common way of setting application variables.
+    // common way of setting application variables
     app.setValue = app.set.bind(app);
 
     app.getValue = function (path) {
